@@ -3,3 +3,77 @@
     margin: 0px 10px 0px 0px;
     padding: 0px;
 }
+
+.card-header {
+    font-size: 1em;
+    color: #0679B3;
+    font-weight: bold;
+    padding: 2px;
+    cursor: pointer;
+    text-align: left;
+    background-color: #FFF;
+    border-bottom: none;
+}
+
+.filter-header {
+    cursor: default;
+    text-align: center;
+}
+
+.card-header > p {
+    margin-bottom: 0px;
+    padding-left: 10px;
+}
+
+.card-header > p > img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+#search-by-name-input {
+    display: inline-block;
+    float: left;
+    width: 60%;
+    margin-right: 10px;
+    font-size: 0.7em;
+    padding: 5px;
+    border: 1px inset #DDD;
+}
+
+#search-by-name-submit {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    background: linear-gradient(to bottom, #0f6999 5%, #10354f 100%);
+    background-color: #0f6999;
+    border-radius: 3px;
+    border: 1px solid #124d77;
+    cursor: pointer;
+    color: #DDD;
+    font-size: 1em;
+    padding: 2px 5px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #051e3d;
+}
+
+#search-by-name-submit:hover {
+    background: linear-gradient(to bottom, #10354f 5%, #0f6999 100%);
+    text-decoration: none;
+    color: #FFF;
+}
+
+.fa {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+[data-toggle="collapse"] .fa:before {
+  content: "\f0d8";
+}
+
+[data-toggle="collapse"].collapsed .fa:before {
+  content: "\f0d7";
+}

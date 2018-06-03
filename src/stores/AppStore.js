@@ -17,9 +17,15 @@ class AppStore extends Reflux.Store {
     // We Used the http service to launch a request
     // The answer will be assigned to data and will be consumed by the view
     // The promise is present in the request
-    getHotels() {
+    getHotels(query) {
         const self = this;
-        HTTP.get('http://localhost:3500/hotels')
+        let uri = 'http://localhost:3500/hotels';
+        // If there is a query, add it to the request
+        if (query) {
+            uri = uri + query;
+        }
+        // Create the promise
+        HTTP.get(uri)
         .then((response) => {
             self.setState({
                 data: response
