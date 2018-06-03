@@ -1,17 +1,55 @@
-import React, {Component} from 'react';
+import React from 'react';
+import Reflux from 'reflux';
+import AppStore from '../../stores/AppStore';
+import Actions from '../../actions/Actions';
 import '../../styles/Grid.css';
 
 // Importing components
 import Card from './Card';
 
 // Grid Component
-class Grid extends Component {
+class Grid extends Reflux.Component {
+    constructor(){
+        super();
+        // Declaring the state to be able to access store state
+        this.state = {};
+        // Setting the store to be used
+        this.store = AppStore;
+        // Variable to be shared between the component and the store
+        this.storeKeys = ['data'];
+        this.getHotels = this.getHotels.bind(this);
+    }
+
+    // Lifecycle initializing the data to be render
+    // Call to the REST API
+    componentWillMount() {
+        // Calling component will mount super from reflux
+        super.componentWillMount();
+        this.getHotels();
+    }
+
+    // Method that calls the action getHotels defined in the store
+    getHotels (e){
+        Actions.getHotels();
+    }
+
     render() {
+        // Por cada persona que traiga en data cada vez que se haga un render llamamos una card
+        let hotels = this.state.data.map((currentValue, index, array) => {
+            return (
+                <Card
+                    key={index}
+                    hotelId={currentValue.id}
+                    hotelImage={currentValue.image}
+                    hotelName={currentValue.name}
+                    hotelPrice={currentValue.price}
+                    hotelStars={currentValue.stars}
+                    hotelAmenities={currentValue.amenities}/>
+            );
+        });
         return (
             <div className="grid-box container col-md-8 col-sm-11">
-                <Card/>
-                <Card/>
-                <Card/>
+                { hotels }
             </div>
         );
     }
