@@ -1,7 +1,5 @@
 import React from 'react';
 import Reflux from 'reflux';
-import AppStore from '../stores/AppStore';
-import Actions from '../actions/Actions';
 import '../styles/Home.css';
 
 // Importing components
@@ -12,7 +10,7 @@ import Filters from '../components/home/Filters';
 class Home extends Reflux.Component {
     render() {
         return (
-            <div className="home row">
+            <div className="home row justify-content-center">
                 <Filters/>
                 <Grid/>
             </div>
