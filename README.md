@@ -22,7 +22,7 @@ npm install
 npm start
 ```
 
-![Alt Text](https://github.com/Gatop/reactjs-reflux-app-hotels/blob/master/public/doc-gif.gif)
+![Alt Text](https://github.com/Gatop/reactjs-reflux-app-hotels/blob/master/documentation/doc-gif.gif)
 
 ## Modules
 
