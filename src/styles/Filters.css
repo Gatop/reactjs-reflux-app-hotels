@@ -2,7 +2,6 @@
    -  Global Component   -
    -----------------------*/
 .filters-box {
-    background-color: yellow;
     margin: 0px 10px 0px 0px;
     padding: 0px;
 }
@@ -101,4 +100,15 @@
     font-size: 0.8em;
     padding-bottom: 5px;
     margin-bottom: 0px;
+}
+
+/* -----------------------
+   -   Mobile Sttings    -
+   -----------------------*/
+
+@media all and (max-width: 768px) {
+    .filters-box {
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+    }
 }

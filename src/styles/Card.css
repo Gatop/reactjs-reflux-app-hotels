@@ -128,3 +128,20 @@
     text-decoration: none;
     color: #FFF;
 }
+
+/* -----------------------
+   -   Mobile Sttings    -
+   -----------------------*/
+
+@media all and (max-width: 768px) {
+    .info-hotel-left > img {
+        height: 250px;
+        width: 100%;
+    }
+
+    .price-hotel {
+        border-top: 1px dashed #DDD;
+        border-left: none;
+        padding-top: 10px;
+    }
+}
