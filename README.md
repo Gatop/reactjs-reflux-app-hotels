@@ -22,6 +22,8 @@ npm install
 npm start
 ```
 
+Now you can enter with the browser to http://localhost:3000/ and test the app.
+
 ![Alt Text](https://github.com/Gatop/reactjs-reflux-app-hotels/blob/master/documentation/doc-gif.gif)
 
 ## Modules
