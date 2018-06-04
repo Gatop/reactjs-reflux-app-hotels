@@ -1,3 +1,6 @@
+/* -----------------------
+   -  Global Component   -
+   -----------------------*/
 .card {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -38,6 +41,11 @@
     padding: 0px;
 }
 
+
+/* -----------------------
+   -  Hotel info left    -
+   -----------------------*/
+
 .hotel-icons {
     padding: 0;
     margin: 0;
@@ -69,6 +77,10 @@
 .hotel-title {
     color: #0679B3;
 }
+
+/* -----------------------
+   -  Hotel info right   -
+   -----------------------*/
 
 .price-hotel {
     border-left: 1px dashed #DDD;
