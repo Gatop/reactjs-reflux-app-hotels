@@ -1,6 +1,6 @@
 # reactjs-reflux-app-hotels
 
-This is an APP built with **ReactJs** using **Reflux**. The app is using all the modules installed by create-react-app. NPM was used to manage dependencies.
+This is an APP built with **ReactJs** using **Reflux**. The app is using all the modules installed by create-react-app. NPM was used to manage dependencies. Please run **nodejs-express-api-hotels** to get it fully usable
 
 ### Clone the repo
 
@@ -38,8 +38,6 @@ npm test a
 ## Project Description
 
 ### Project Structure
-
-This is the complete project structure:
 
 ```
 reactjs-reflux-app-hotels
@@ -85,14 +83,14 @@ reactjs-reflux-app-hotels
 
 ### Components Segregation
 
-Several components were created for this project. Following image is the actual components structure.
+Several components were created for this project. The following image is the current components structure.
 
 ![Alt Text](https://github.com/Gatop/reactjs-reflux-app-hotels/blob/master/documentation/desktop.png)
 
 
 ### Getting data
 
-Getting data and render it to the **Grid.js** component was built with reflux. The main idea is to have a listener inside components that could affect data behaviour. For **Grid.js** component, when it will be mount, a call for the action **getHotels** is ever done. Also for **Filters.js**, whenever a filter is modified, the same action will be called.
+Getting data and render it to the **Grid.js** component was built with reflux. The main idea is to have a listener inside components that could affect data behavior. For **Grid.js** component, when it will be mount, a call for the action **getHotels** is ever done. Also for **Filters.js**, whenever a filter is modified, the same action will be called.
 
 All the information is managed by **AppStore.js** in **data** state. this state is linked to **Grid.js**
 
@@ -104,7 +102,7 @@ This is an example of the interaction flow with reflux and replicated in this AP
 
 ### Modules
 
-This modules where used to create this APP:
+These modules were used to create this APP:
 
 * [reflux](https://www.npmjs.com/package/reflux)
 * [react-router-dom](https://www.npmjs.com/package/react-router-dom)
