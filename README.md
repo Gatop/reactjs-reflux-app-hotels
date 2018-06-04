@@ -22,6 +22,8 @@ npm install
 npm start
 ```
 
+![Alt Text](https://github.com/Gatop/reactjs-reflux-app-hotels/blob/master/public/doc-gif.gif)
+
 ## Modules
 
 This modules where used to create this APP:
